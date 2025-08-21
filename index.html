@@ -1,0 +1,17 @@
+    links_to_visit = [
+        "http://demo.testfire.net/bank/main.aspx",
+        "http://demo.testfire.net/bank/account.aspx",
+        "http://demo.testfire.net/bank/transfer.aspx",
+        "http://demo.testfire.net/bank/lookup.aspx",
+        "http://demo.testfire.net/bank/logout.aspx"
+    ]
+
+    for link in links_to_visit:
+        driver.get(link)
+        print("Visited:", driver.title)
+        time.sleep(2)
+
+    driver.quit()
+
+if _name_ == "_main_":
+    main()
